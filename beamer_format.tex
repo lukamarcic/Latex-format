@@ -1,0 +1,122 @@
+\documentclass[11pt]{beamer}
+
+
+%\usepackage[slovene]{babel}
+%\usepackage[UKenglish]{babel}
+%\usepackage[utf8]{inputenc} %use for pdflatex
+
+\usepackage{amsfonts, amssymb, amsmath, amsthm} % standard math packages
+
+\usepackage{graphicx} % inserting images
+\usepackage{svg} % inserting vector images
+\usepackage{float} % better image placements
+\usepackage{wrapfig} % text wrapping around figure
+
+\usepackage{biblatex} % bibliography
+
+\usepackage{tikz-cd} % tikz commutative diagrams
+
+\usepackage{hyperref} % refrences, hyperlinks
+
+\usepackage{array} % more options for tables
+\usepackage{longtable} % tables that go over a page break
+
+\usepackage{fontspec} % font options
+
+
+
+\usepackage{csquotes}
+
+
+
+
+
+\graphicspath{ {slike/} } % path for graphicx
+\svgpath{ {slike/} } % path for svg
+\addbibresource{literatura.bib} % path for bibliography
+
+\usetheme[numbering=fraction, progressbar=foot]{metropolis} % beamer theme
+\usecolortheme{rose}
+\AtBeginSection[]{ % frame before each section
+    \begin{frame}
+      \frametitle{Kazalo}
+        \tableofcontents[sections = {1-4}, currentsection, hideothersubsections, sectionstyle=show/shaded]
+    \end{frame}
+}
+
+\title{Title}
+\subtitle{Subtitle}
+\author{Author}
+\date[Short date]{Long date}
+\institute[Institute initals]{Institute name}
+
+
+
+
+\theoremstyle{definition} % Bold title, normal body: definitions and examples
+%\newtheorem{refrence name}{display name}{numbering}
+
+\theoremstyle{plain} % Bold title, italic body: theorems, propositions, lemmas, corollaries, conjectures
+
+\theoremstyle{remark} %Italic title, normal body: remarks and notes
+
+\newenvironment{dokaz}[1]{\begin{proof}[#1]}{\end{proof}}
+
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\renewcommand{\S}{\mathbb{S}}
+\newcommand{\B}{\mathbb{B}}
+
+
+%\newcommand{\referenca}{}
+%\newtheorem*{izrek_ponovitev*}{Izrek~\ref{\referenca}}
+%\newenvironment{izrek_ponovitev}[2]
+% {
+%  \renewcommand{\referenca}{#1}
+%  \begin{izrek_ponovitev*}[#2]
+%  }
+% {
+%  \end{izrek_ponovitev*}
+%  }
+%
+
+
+\begin{document}
+
+
+
+%\tableofcontents
+%\listoffigures
+%\listoftables
+
+\frame{\titlepage}
+\begin{frame}
+    \frametitle{}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+    \frametitle{}
+    %\tableofcontents
+    %\listoffigures
+    %\listoftables
+\end{frame}
+
+\end{document}
