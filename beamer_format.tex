@@ -18,6 +18,9 @@
 
 \usepackage{hyperref} % refrences, hyperlinks
 
+\usepackage{xcolor} % basic colours
+\usepackage[svgnames]{xcolor} % more colours
+
 \usepackage{array} % more options for tables
 \usepackage{longtable} % tables that go over a page break
 
@@ -83,6 +86,14 @@
 %  \end{izrek_ponovitev*}
 %  }
 %
+
+\newenvironment{coloured_block}[3]{ % coloured boxes
+    \setbeamercolor{block title}{fg=#2, bg=#3}
+    \begin{block}{#1}
+}{
+    \end{block}
+    \setbeamercolor{block title}{fg=black, bg=lightgray}
+}
 
 
 \begin{document}
